@@ -1,0 +1,161 @@
+body{
+		font-family: 'Malgun Gothic', 'Verdana';   /* 한글이면 맑은고딕 영어면 버다나 */
+		background-color:  #ffcc99;
+		color: #fff;  /* 글자색 희색 */
+		margin: 0;  /* 바깥쪽 간격 */
+		padding: 0;  /* 안쪽 간격 */
+}
+h1, h2, h3, h4, h5, h6{
+	font-size: 1.5em;  /* 픽셀은 고정적인 크기, em은 유동적인 크기, 비율에 따라서 주는것 1.5배 */
+}
+h1{
+	font-size: 2em;  /* 전체적으론 1.5em 주고 h1은 2em을 준다 */
+	padding-bottom: 0;
+	margin-bottom: 0;  
+}
+div#wrapper{
+	width:90%;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+div#header{
+	position: relative; /*  부모가 wrapper이니 기준이 wrapper이다 */
+	margin-bottom: 0;
+	padding: 0;
+	color: #000;   /* 흰색글씨 */
+}
+div#title-box{
+	float: left; /*  부모한테 포지션 주면 그 자식들은 다 물려받음 */
+	text-align: left;
+	display: block;
+}
+div#login-box{
+	float: right;
+	margin: 10px;  /* 동서남북 다줄때 , 두개(10xp 20px)주면 상하 좌우 */
+	font-size: 1.1em;
+	display: block;
+	color: #fff;
+}
+div#login-box a:hover{ /* hover는 a태그 위를 마우스커서가 지나가면 효과를 줘라라는 의미 */
+	color: #fff;
+	text-decoration: none; /* a태그 밑줄 없애주는 것 */	
+}
+div#login-box a:active{ /* active는 실행되면 */
+	color: #ff0000;
+	text-decoration: none; /* a태그 밑줄 없애주는 것 */	
+}
+div#header h1{ /* header h1이라 주고 오버라이딩 */
+	color: #fff;
+	padding: 5px 0;  /* 상하, 좌우 */
+	margin: 0;
+	border: none;
+	line-height: 2em;
+	font-weight: bold;
+	font-size: 32px;  /* 모바일이든 웹이든 사이즈 안바뀜  */
+}
+div#content{
+	padding: 15px 30px 15px 30px;  /* 12시 3시 6시 9시,  15px 30px 두개만 주는것도 의미 같음 */
+	background-color: #fff;
+	margin-bottom: 30px;
+	min-height: 400px;   /* 최소 높이는 400으로 두라는 것 잘리더라도 */
+	color: black;
+}
+div#content-box{
+	clear:both; /* 다시 크기를 초기화? */
+	margin-top: 40px;
+}
+div#menu-box{
+	clear:both; /* 다시 크기를 초기화? 다시 스태틱으로 바뀐다음에 설정적용된다? */
+	margin-top: 40px;
+} 
+ul#menu{
+	text-align: right;
+	margin: 0;
+	border-bottom: 1px #ff80c0;
+	position: relative;  /* 부모는 메뉴박스 */ 
+}
+ul#menu li{
+	display: inline;  /* 한줄로 한다 */
+	list-style: none;  /* . or 1 (숫자) 안주게 함 */
+	background-color: #ff80ff;
+}
+ul#menu li a{
+	padding: 10px 20px;
+	background-color: #ffff00;
+	font-weight: bold;
+	text-decoration: none;   /* a태그에 줄 치지 말라는것 */
+	line-height: 2.8em;  /* 메뉴박스 기준이기때문에 그리 크진 않음 */
+	color: black;
+}
+ul#menu li a:hover{
+	background-color: #ff80ff;
+	text-decoration: none;   /* a태그에 줄 치지 말라는것 */
+}
+ul#menu li a:active{ /* 클릭할때 */
+	background-color: #ff8080;
+	text-decoration: none;   /* a태그에 줄 치지 말라는것 */
+}
+div#footer{
+	clear:both;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	padding: 10px 0;
+	line-height: normal;
+	font-size: 1.5em;
+}
+
+table,th,td {border: 1px solid gray} 
+ .bgColorisYellow{background-color: #ffff00}
+ .center{margin: 0 auto}
+ .width100pt{width:100%}
+ .width90pt{width:90%}
+ .width80pt{width:80%}
+ .fontColorBlue{color:blue}
+ .cursor{cursor:pointer}
+ .marginTop30px{margin-top: 30px}
+ .marginTop50px{margin-top: 50px}
+ .marginLeft200px{margin-left: 200px}
+ .marginRight200px{margin-right: 200px}
+ .marginBot30px{margin-bottom: 30px}
+ .marginBot50px{margin-bottom: 50px}
+ .width300px{width:300px}
+ .floatRight{float:right;}
+ .pageBox{
+ 	list-style: none;
+ 	padding: 0;
+ 	margin: 0;
+ }
+ .pageBox li{
+ 	display:inline;
+ }
+/* 클래스네임
+.width-300{width:300px}
+.width-full{width:100%;}
+.height-80{height:80px}
+.height-100{height:100px}
+.height-390{height:390px}
+.margin-auto{margine: 0 auto} 
+.align-left{text-align: left}
+.align-right{text-align: right}
+.align-center{text-align: center}
+main
+#main-tab-Layout{width:100%;margine: 0 auto;height:390px }
+#main-tab-Layout-td{width:60%;height:400px}
+#login-size{width:40%; height:390px}
+
+user_login
+#user-login-layout{width: 250px;margin:150px auto}
+#user-login-form{border:1px solid black}
+
+admin_login
+#admin-login-layout{width: 250px;margin:150px auto}
+#admin-login-form{border:1px solid black}
+ 
+list
+#list-layout{ border: 1px solid black;background-color:#e6f9ff;}	
+
+ */
